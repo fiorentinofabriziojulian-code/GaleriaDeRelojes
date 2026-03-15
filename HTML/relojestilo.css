@@ -1,0 +1,91 @@
+    
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: grid;
+          
+            grid-template-columns: 200px 1fr 200px;
+          
+            grid-template-rows: auto 1fr;
+            min-height: 100vh;
+        }
+
+       
+        header {
+            grid-column: 1 / -1; 
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        aside {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-right: 1px solid #ccc; 
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .aside-izquierdo {
+            border-right: 1px solid #ccc;
+        }
+
+        .aside-derecho {
+            border-left: 1px solid #ccc;
+        }
+
+        
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor-relojes {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        
+        .reloj-card {
+            background-color: white;
+            border: 2px solid #333;
+            margin-bottom: 15px;
+            display: flex;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+        }
+
+        .reloj-img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover; 
+    border: 1px solid #999;
+    margin-right: 20px;
+}
+        }
+
+        .reloj-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        .reloj-info span {
+            font-weight: bold;
+            color: #555;
+        }
+        
+    
